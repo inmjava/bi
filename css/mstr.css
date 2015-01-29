@@ -1,0 +1,23 @@
+.Red .mstrHeader{background:#c22929 url(../images/shortcutBarGradient.gif) repeat-x top;}.Red .mstrShortcutSelected A,.Red .mstrShortcut A:hover{color:#FFC;}.Red .mstrPath{background:#585859 url(../images/pathBarGradient.gif) repeat-x left top;}.Red .mstrPath SPAN,.Red .mstrPath SPAN A:link,.Red .mstrPath SPAN A:visited{color:#FFF;}.Red .ncsLIVName,.Red .ncsLIVName A:link,.Red .ncsLIVName A:visited,.Red .mstrLargeIconViewItemName,.Red .mstrLargeIconViewItemName A:link,.Red .mstrmojo-ConditionWalk .dial-checkitem.selected,.Red .mstrmojo-ConditionWalk .dial-item.selected,.Red .mstrLargeIconViewItemName A:visited{color:#F56600;}
+
+.mstrWeb{color:#000;background-color:#F5F5F2;font-family:Arial,Verdana,Helvetica,sans-serif;font-size:8pt;margin:0;padding:0;}IMG{border:medium none;vertical-align:middle;}
+.mstrContent{display:block;height:auto;margin:0;overflow:visible;padding:6px;white-space:normal;}
+
+.mstrLargeIconViewItemName,.ncsLIVName,.mstrLargeIconViewItemName A:link,.mstrLargeIconViewItemName A:visited,.ncsLIVName A:link,.ncsLIVName A:visited{font-size:13pt;font-weight:bold;text-decoration:none;}.mstrLargeIconViewItemName,.ncsLIVName,.mstrLargeIconViewItemDescription,.ncsLIVDesc{word-wrap:break-word;}.mstrLargeIconViewItemActions A,.ncsLIVActions A{margin-right:10px;text-decoration:underline;}.mstrLargeIconViewItemText,.ncsLIVText{vertical-align:top;padding-left:9px;color:#000;}span.mstrIcon{background:url("../images/icone.png") no-repeat scroll 2px 2px transparent;display:block;width:32px;height:34px;}.mstrPathText .mstrPathLast{font-weight:bold;}.mstrPathIcons,.mstrPathText{left:50%;top:33px;margin-left:-60px;position:absolute;margin-right:9px;display:inline;vertical-align:middle;line-height:21px;}.mstrPathContainer{min-height:28px;padding-top:3px;}.mstrHeader{line-height:28px;color:#FFF}#mstrStarburst,#mstrStarburstSmall{position:absolute;left:5px;top:-25px;left:50%;display:block;margin-left:-30px}.mstrLogo{background:transparent url(../images/copel.png) no-repeat scroll center;height:27px;width:60px;cursor:pointer;}
+
+		#mstrStarburst {top:1px;/*when shortcuts bar is shown, the large logo should set top:1*/}
+		.path.mstrLogo {display: block !important;}
+		.path.mstrLogoSmall {display: none !important;}
+	
+		.path.mstrLogo {display: none;}
+		.mstrLogoSmall {display: none;}
+		.path.mstrLogoSmall {display: block;}
+		#mstrStarburst {top:1px;}
+		
+		.mstrLink { letter-spacing:1px } 
+		.mstrContent {  float:left; width:270px; background-color:#CCCCCC; border:1px solid #CCCCCC; 
+						border-radius:15px; box-shadow:0 1px 0 rgba(255, 255, 255, 0.5); 
+						color:#333333; display:inline-block; text-shadow:0 1px 1px rgba(255, 255, 255, 0.5); 
+						background-color:#DDDDDD; background-image:linear-gradient(#F5F5F2, #DDDDDD); 
+						background-repeat:repeat-x; margin:0 14px 14px 0; text-decoration:none }
+		.mstrProjectDescription { font-size:9pt; }

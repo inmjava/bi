@@ -1,0 +1,291 @@
+<cnfndx
+    bld="9.2.300.106J"
+    v="1" >
+
+    <cnfs>
+
+        <cnf
+            cid="6fb6130e-c473-4c12-9ed0-4aea69c8df65"
+            cs=""
+            dt="1"
+            n="ITE - iPhone"
+            uptc="-1" >
+
+            <lnk
+                am="1"
+                ipo="true"
+                po="-1"
+                rt="0" />
+
+            <tcs />
+        </cnf>
+
+        <cnf
+            cid="ae2d1cbb-b82a-40e2-abab-6f22f05938b5"
+            cs=""
+            dt="2"
+            n="ITE - iPad"
+            uptc="-1" >
+
+            <lnk
+                am="2"
+                ipo="true"
+                po="-1"
+                rt="0" />
+
+            <tcs />
+        </cnf>
+
+        <cnf
+            cid="668b0cc6-4a9c-4fa0-95b6-5f16615b50b1"
+            cs=""
+            dt="1"
+            n="BW - Alguma coisa"
+            uptc="-1" >
+
+            <lnk
+                am="1"
+                ipo="true"
+                po="-1"
+                rt="0" />
+
+            <tcs />
+        </cnf>
+
+        <cnf
+            cid="255f3d56-9f6a-4f41-ab7e-2f8f0d5ad237"
+            cs=""
+            dt="2"
+            n="GCI - iPad"
+            uptc="-1" >
+
+            <lnk
+                am="1"
+                ipo="true"
+                po="-1"
+                rt="0" />
+
+            <tcs />
+        </cnf>
+
+        <cnf
+            cid="7ae4022a-499f-4f92-a75f-18f6a08c923b"
+            cs=""
+            dt="1"
+            n="GCI - iPhone"
+            uptc="-1" >
+
+            <lnk
+                am="1"
+                ipo="true"
+                po="-1"
+                rt="0" />
+
+            <tcs />
+        </cnf>
+
+        <cnf
+            cid="e006d649-21c4-4ea3-b5eb-a098f4845f2f"
+            cs=""
+            dt="3"
+            n="GCI - Android"
+            uptc="-1" >
+
+            <lnk
+                am="1"
+                ipo="true"
+                nm=""
+                po="-1"
+                rt="0" />
+
+            <tcs />
+        </cnf>
+
+        <cnf
+            cid="b6d44af8-6a6c-4cb4-9f26-4cee28188fb6"
+            cs=""
+            dt="2"
+            n="GCI STI - iPad"
+            uptc="-1" >
+
+            <lnk
+                am="1"
+                ipo="true"
+                po="-1"
+                rt="0" />
+
+            <tcs />
+        </cnf>
+
+        <cnf
+            cid="b4a2b3cd-2e01-412f-a425-0cda25a1bd07"
+            cs=""
+            dt="1"
+            n="GCI STI - iPhone"
+            uptc="-1" >
+
+            <lnk
+                am="1"
+                ipo="true"
+                nm=""
+                po="-1"
+                rt="0" />
+
+            <tcs />
+        </cnf>
+
+        <cnf
+            cid="34642358-65ec-435c-b360-260370e01398"
+            cs=""
+            dt="2"
+            n="Treinamento - iPad Copel"
+            uptc="-1" >
+
+            <lnk
+                am="1"
+                ipo="true"
+                nm=""
+                po="-1"
+                rt="0" />
+
+            <tcs />
+        </cnf>
+
+        <cnf
+            cid="ed583748-3e7f-4324-a6e6-08adba592794"
+            cs=""
+            dt="1"
+            n="Treinamento - iPhone Copel"
+            uptc="-1" >
+
+            <lnk
+                am="1"
+                ipo="true"
+                nm=""
+                po="-1"
+                rt="0" />
+
+            <tcs />
+        </cnf>
+
+        <cnf
+            cid="34bad97e-5a46-44a2-88d8-4829925eb456"
+            cs=""
+            dt="2"
+            n="Treinamento - iPad Copel BW"
+            uptc="-1" >
+
+            <lnk
+                am="1"
+                ipo="true"
+                nm=""
+                po="-1"
+                rt="0" />
+
+            <tcs />
+        </cnf>
+
+        <cnf
+            cid="b6925d9d-a518-46dd-af6a-a49612af9d17"
+            cs=""
+            dt="1"
+            n="Treinamento - iPhone Copel BW"
+            uptc="-1" >
+
+            <lnk
+                am="1"
+                ipo="true"
+                nm=""
+                po="-1"
+                rt="0" />
+
+            <tcs />
+        </cnf>
+
+        <cnf
+            cid="4f00a5d8-bf86-4516-bb70-a22a15482d26"
+            cs=""
+            dt="2"
+            n="Menu - Consultoria Copel"
+            uptc="-1" >
+
+            <lnk
+                am="1"
+                ipo="true"
+                nm=""
+                po="-1"
+                rt="0" />
+
+            <tcs />
+        </cnf>
+
+        <cnf
+            cid="0fa030cf-de5b-4890-8f46-d171b0f44570"
+            cs=""
+            dt="3"
+            n="Android - Treinamento BW"
+            uptc="-1" >
+
+            <lnk
+                am="1"
+                ipo="true"
+                nm=""
+                po="-1"
+                rt="0" />
+
+            <tcs />
+        </cnf>
+
+        <cnf
+            cid="cdf7452f-1b24-4bb9-b7e6-af8766982fcd"
+            cs=""
+            dt="2"
+            n="TRT - Treinamento Transaction"
+            uptc="-1" >
+
+            <lnk
+                am="1"
+                ipo="true"
+                nm=""
+                po="-1"
+                rt="0" />
+
+            <tcs />
+        </cnf>
+
+        <cnf
+            cid="13963603-b379-4a21-8efc-687211a7c9fb"
+            cs=""
+            dt="1"
+            n="TRT - Treinamento Transaction"
+            uptc="-1" >
+
+            <lnk
+                am="1"
+                ipo="true"
+                nm=""
+                po="-1"
+                rt="0" />
+
+            <tcs />
+        </cnf>
+
+        <cnf
+            cid="224994f9-fab8-4b1f-8aca-80f40358fbe7"
+            cs=""
+            dt="2"
+            n="IGE - Informações Gerenciais"
+            uptc="-1" >
+
+            <lnk
+                am="1"
+                ipo="true"
+                nm=""
+                po="-1"
+                rt="0" />
+
+            <tcs />
+        </cnf>
+    </cnfs>
+
+</cnfndx>
