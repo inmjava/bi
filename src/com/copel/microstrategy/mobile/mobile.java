@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Enumeration;
-import java.util.Iterator;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -49,7 +48,6 @@ public class mobile extends HttpServlet {
 
 		String device = "";
 		String dtDevice = "";
-		String dtDevice2 = "-1";
 
 		Enumeration en = request.getParameterNames();
         
@@ -67,10 +65,12 @@ public class mobile extends HttpServlet {
             } else if(paramName.equalsIgnoreCase("ipad")){
     			device = "iPad";
     			dtDevice = "2";
-            } else if(paramName.equalsIgnoreCase("android")){
+            } else if(paramName.equalsIgnoreCase("androidm")){
     			device = "Android";
     			dtDevice = "3";
-    			dtDevice2 = "4";
+            } if(paramName.equalsIgnoreCase("android")){
+    			device = "Tablet Android";
+    			dtDevice = "4";
             }
         }
 		
@@ -86,9 +86,13 @@ public class mobile extends HttpServlet {
 				device = "iPad";
 				dtDevice = "2";
 			} else if (agent.contains("Android")) {
-				device = "Android";
-				dtDevice = "3";
-    			dtDevice2 = "4";
+				if(agent.contains("Mobile")){
+					device = "Android";
+					dtDevice = "3";
+				} else {
+					device = "Tablet Android";
+					dtDevice = "4";
+				}
 			}
         }
 
@@ -118,7 +122,7 @@ public class mobile extends HttpServlet {
 			String n = nodeList.item(x).getAttributes().getNamedItem("n").getNodeValue();
 			String cid = nodeList.item(x).getAttributes().getNamedItem("cid").getNodeValue();
 			
-			if ((dt.equals(dtDevice) || dt.equals(dtDevice2)) && !n.startsWith("*")) {
+			if (dt.equals(dtDevice) && !n.startsWith("*")) {
 				listN.add(n);
 				listCid.add(cid);
 			} 
