@@ -7,6 +7,7 @@
 	String device = (String) request.getAttribute("device");
 	String decode = (String) request.getAttribute("decode");
 	String protocolo = (String) request.getAttribute("protocolo");
+	String urlBase = (String) request.getAttribute("urlBase");
 	String servername = request.getServerName();
 	List<String> listN = (List<String>) request.getAttribute("listN");
 	List<String> listCid = (List<String>) request.getAttribute("listCid");
@@ -55,8 +56,10 @@
 			<%
 				for (int i = 0; i < listN.size(); i++) {
 
-					String url = "http://" + servername + ":80/MicroStrategyMobile/servlet/taskProc?taskId=getMobileConfiguration&taskEnv=xml&taskContentType=xmlanf&configurationID=" + listCid.get(i);
-					url = (decode == null ? protocolo + "://?url=" + URLEncoder.encode(url) + "&authMode=1" : url);
+					//String url = "http://" + servername + ":80/MicroStrategyMobile/servlet/taskProc?taskId=getMobileConfiguration&taskEnv=xml&taskContentType=xmlanf&configurationID=" + listCid.get(i);
+					//url = (decode == null ? protocolo + "://?url=" + URLEncoder.encode(url) + "&authMode=1" : url);
+					String url = String.format(urlBase, servername, listCid.get(i));
+					url = (decode == null ? URLEncoder.encode(url) : url);
 			%>
 					
 					<a class="mstrContent" title="<%= listN.get(i) %>" href="<%= url %>">

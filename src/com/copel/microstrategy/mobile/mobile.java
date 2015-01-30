@@ -48,6 +48,7 @@ public class mobile extends HttpServlet {
 
 		String device = "";
 		String dtDevice = "";
+		String urlBase = "";
 
 		Enumeration en = request.getParameterNames();
         
@@ -59,18 +60,23 @@ public class mobile extends HttpServlet {
             } else if(paramName.equalsIgnoreCase("iphone")){
     			device = "iPhone";
     			dtDevice = "1";
+    			urlBase = Messages.getString("mobile.link.iphone");
             } else if(paramName.equalsIgnoreCase("ipod")){
     			device = "iPhone";
     			dtDevice = "1";
+    			urlBase = Messages.getString("mobile.link.iphone");
             } else if(paramName.equalsIgnoreCase("ipad")){
     			device = "iPad";
     			dtDevice = "2";
+    			urlBase = Messages.getString("mobile.link.ipad");
             } else if(paramName.equalsIgnoreCase("androidm")){
     			device = "Android";
     			dtDevice = "3";
+    			urlBase = Messages.getString("mobile.link.androidm");
             } if(paramName.equalsIgnoreCase("android")){
     			device = "Tablet Android";
     			dtDevice = "4";
+    			urlBase = Messages.getString("mobile.link.android");
             }
         }
 		
@@ -79,19 +85,24 @@ public class mobile extends HttpServlet {
 			if (agent.contains("iPhone")) {
 				device = "iPhone";
 				dtDevice = "1";
+    			urlBase = Messages.getString("mobile.link.iphone");
 			} else if (agent.contains("iPod")) {
 				device = "iPhone";
 				dtDevice = "1";
+    			urlBase = Messages.getString("mobile.link.iphone");
 			} else if (agent.contains("iPad")) {
 				device = "iPad";
 				dtDevice = "2";
+    			urlBase = Messages.getString("mobile.link.ipad");
 			} else if (agent.contains("Android")) {
 				if(agent.contains("Mobile")){
 					device = "Android";
 					dtDevice = "3";
+	    			urlBase = Messages.getString("mobile.link.androidm");
 				} else {
 					device = "Tablet Android";
 					dtDevice = "4";
+	    			urlBase = Messages.getString("mobile.link.android");
 				}
 			}
         }
@@ -139,6 +150,7 @@ public class mobile extends HttpServlet {
 		request.setAttribute("servername", request.getServerName());
 		request.setAttribute("listN", listN);
 		request.setAttribute("listCid", listCid);
+		request.setAttribute("urlBase", urlBase);
 
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/mobile.jsp");
 		dispatcher.forward(request, response);
