@@ -59,7 +59,7 @@
 					//String url = "http://" + servername + ":80/MicroStrategyMobile/servlet/taskProc?taskId=getMobileConfiguration&taskEnv=xml&taskContentType=xmlanf&configurationID=" + listCid.get(i);
 					//url = (decode == null ? protocolo + "://?url=" + URLEncoder.encode(url) + "&authMode=1" : url);
 					String url = String.format(urlBase, servername, listCid.get(i));
-					url = (decode == null ? URLEncoder.encode(url) : url);
+					url = (decode == null ? "mstr://?url=" + URLEncoder.encode(url) : url);
 			%>
 					
 					<a class="mstrContent" title="<%= listN.get(i) %>" href="<%= url %>">
