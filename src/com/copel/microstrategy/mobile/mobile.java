@@ -92,28 +92,28 @@ public class mobile extends HttpServlet {
 				device = "iPhone";
 				dtDevice = "1";
     			urlBase = Messages.getString("mobile.link.iphone");
-    			urlBase = Messages.getString("mobile.link.final.iphone");
+    			urlFinal = Messages.getString("mobile.link.final.iphone");
 			} else if (agent.contains("iPod")) {
 				device = "iPhone";
 				dtDevice = "1";
     			urlBase = Messages.getString("mobile.link.iphone");
-    			urlBase = Messages.getString("mobile.link.final.iphone");
+    			urlFinal = Messages.getString("mobile.link.final.iphone");
 			} else if (agent.contains("iPad")) {
 				device = "iPad";
 				dtDevice = "2";
     			urlBase = Messages.getString("mobile.link.ipad");
-    			urlBase = Messages.getString("mobile.link.final.ipad");
+    			urlFinal = Messages.getString("mobile.link.final.ipad");
 			} else if (agent.contains("Android")) {
 				if(agent.contains("Mobile")){
 					device = "Android";
 					dtDevice = "3";
 	    			urlBase = Messages.getString("mobile.link.androidm");
-	    			urlBase = Messages.getString("mobile.link.final.androidm");
+	    			urlFinal = Messages.getString("mobile.link.final.androidm");
 				} else {
 					device = "Tablet Android";
 					dtDevice = "4";
 	    			urlBase = Messages.getString("mobile.link.android");
-	    			urlBase = Messages.getString("mobile.link.final.android");
+	    			urlFinal = Messages.getString("mobile.link.final.android");
 				}
 			}
         }
