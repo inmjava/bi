@@ -49,6 +49,7 @@ public class mobile extends HttpServlet {
 		String device = "";
 		String dtDevice = "";
 		String urlBase = "";
+		String urlFinal = "";
 
 		Enumeration en = request.getParameterNames();
         
@@ -61,22 +62,27 @@ public class mobile extends HttpServlet {
     			device = "iPhone";
     			dtDevice = "1";
     			urlBase = Messages.getString("mobile.link.iphone");
+    			urlFinal = Messages.getString("mobile.link.final.iphone");
             } else if(paramName.equalsIgnoreCase("ipod")){
     			device = "iPhone";
     			dtDevice = "1";
     			urlBase = Messages.getString("mobile.link.iphone");
+    			urlFinal = Messages.getString("mobile.link.final.iphone");
             } else if(paramName.equalsIgnoreCase("ipad")){
     			device = "iPad";
     			dtDevice = "2";
     			urlBase = Messages.getString("mobile.link.ipad");
+    			urlFinal = Messages.getString("mobile.link.final.ipad");
             } else if(paramName.equalsIgnoreCase("androidm")){
     			device = "Android";
     			dtDevice = "3";
     			urlBase = Messages.getString("mobile.link.androidm");
+    			urlFinal = Messages.getString("mobile.link.final.androidm");
             } if(paramName.equalsIgnoreCase("android")){
     			device = "Tablet Android";
     			dtDevice = "4";
     			urlBase = Messages.getString("mobile.link.android");
+    			urlFinal = Messages.getString("mobile.link.final.android");
             }
         }
 		
@@ -86,23 +92,28 @@ public class mobile extends HttpServlet {
 				device = "iPhone";
 				dtDevice = "1";
     			urlBase = Messages.getString("mobile.link.iphone");
+    			urlBase = Messages.getString("mobile.link.final.iphone");
 			} else if (agent.contains("iPod")) {
 				device = "iPhone";
 				dtDevice = "1";
     			urlBase = Messages.getString("mobile.link.iphone");
+    			urlBase = Messages.getString("mobile.link.final.iphone");
 			} else if (agent.contains("iPad")) {
 				device = "iPad";
 				dtDevice = "2";
     			urlBase = Messages.getString("mobile.link.ipad");
+    			urlBase = Messages.getString("mobile.link.final.ipad");
 			} else if (agent.contains("Android")) {
 				if(agent.contains("Mobile")){
 					device = "Android";
 					dtDevice = "3";
 	    			urlBase = Messages.getString("mobile.link.androidm");
+	    			urlBase = Messages.getString("mobile.link.final.androidm");
 				} else {
 					device = "Tablet Android";
 					dtDevice = "4";
 	    			urlBase = Messages.getString("mobile.link.android");
+	    			urlBase = Messages.getString("mobile.link.final.android");
 				}
 			}
         }
@@ -151,6 +162,7 @@ public class mobile extends HttpServlet {
 		request.setAttribute("listN", listN);
 		request.setAttribute("listCid", listCid);
 		request.setAttribute("urlBase", urlBase);
+		request.setAttribute("urlFinal", urlFinal);
 
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/mobile.jsp");
 		dispatcher.forward(request, response);
